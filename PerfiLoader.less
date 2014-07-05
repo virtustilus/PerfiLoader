@@ -1,0 +1,51 @@
+@imgPath: 'images';
+
+.perfi-loader-preloader{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+
+    .perfi-loader-preloader-image{
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin: auto;
+        background: url("@{imgPath}/preloader32.gif") no-repeat;
+    }
+
+    &.preloader16 {
+        background: none repeat scroll 0 0 rgba(255, 255, 255, 0.97);
+        .perfi-loader-preloader-image {
+            background: url("@{imgPath}/preloader16.gif") no-repeat;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &.preloader32 {
+        background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+        .perfi-loader-preloader-image {
+            background: url("@{imgPath}/preloader32.gif") no-repeat;
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &.preloader64 {
+        .perfi-loader-preloader-image {
+            background: url("@{imgPath}/preloader64.gif") no-repeat;
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &.preloader128 {
+        .perfi-loader-preloader-image {
+            background: url("@{imgPath}/preloader128.gif") no-repeat;
+            width: 128px;
+            height: 128px;
+        }
+    }
+
+}

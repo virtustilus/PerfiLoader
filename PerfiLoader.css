@@ -1,0 +1,39 @@
+.perfi-loader-preloader {
+  display: block;
+  position: absolute;
+  z-index: 999;
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+}
+.perfi-loader-preloader .perfi-loader-preloader-image {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  background: url("images/preloader32.gif") no-repeat;
+}
+.perfi-loader-preloader.preloader16 {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.97);
+}
+.perfi-loader-preloader.preloader16 .perfi-loader-preloader-image {
+  background: url("images/preloader16.gif") no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.perfi-loader-preloader.preloader32 {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+}
+.perfi-loader-preloader.preloader32 .perfi-loader-preloader-image {
+  background: url("images/preloader32.gif") no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.perfi-loader-preloader.preloader64 .perfi-loader-preloader-image {
+  background: url("images/preloader64.gif") no-repeat;
+  width: 64px;
+  height: 64px;
+}
+.perfi-loader-preloader.preloader128 .perfi-loader-preloader-image {
+  background: url("images/preloader128.gif") no-repeat;
+  width: 128px;
+  height: 128px;
+}

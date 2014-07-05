@@ -1,0 +1,26 @@
+{
+    "name": "PerfiLoader",
+    "version": "0.1.1",
+    "homepage": "https://github.com/virtustilus/PerfiLoader",
+    "authors": [
+        "Andrey Bezpalenko <virtustilus@gmail.com>"
+    ],
+    "description": "Fast preloader (spinner) library from Virtustilus. Jquery needed.",
+    "main": "PerfiLoader.js",
+    "dependencies": {
+        "jquery": ">=1.8.0 <2.1.0"
+    },
+    "keywords": [
+        "PerfiLoader",
+        "preloader",
+        "spinner"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>This is example of use</title>
+
+    <link rel="stylesheet" href="../PerfiLoader.css">
+    <style rel="stylesheet">
+        button {
+            padding: 5px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            border: solid 1px #AAA;
+            background: #FFF;
+            outline: 0;
+        }
+        button:hover {
+            -webkit-box-shadow: inset 1px 1px 4px #AACAFA;
+            -moz-box-shadow: inset 1px 1px 4px #AACAFA;
+            box-shadow: inset 1px 1px 4px #AACAFA;
+        }
+
+        textarea {
+            display: block;
+            box-shadow: inset 1px 1px 5px #AAA;
+            margin: 15px 5px;
+            width: 600px;
+            height: 100px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+        div{
+            background: #EEE;
+            position: relative;
+            border: solid 1px #AACAFE;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Examples of use</h1>
+
+<h3>Simple start-stop</h3>
+<textarea id="txt1">
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+</textarea>
+<button id="b1">Start preloader on textarea</button>
+<pre>$('#txt1').preloader();</pre>
+<button id="e1">Stop preloader</button>
+<pre>$('#txt1').preloader(false);</pre>
+<hr>
+
+<h3>Size (16, 32-default, 64, 128)</h3>
+<textarea id="txt2">
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+    SomeText in some form. SomeText in some form. SomeText in some form.
+</textarea>
+<button id="b2">Start preloader 64 on textarea</button>
+<pre>$('#txt2').preloader(true, 64);</pre>
+<button id="e2">Stop preloader</button>
+<pre>$('#txt2').preloader(false);</pre>
+<button id="b2-1">Start preloader 16 on textarea</button>
+<pre>$('#txt2').preloader({size: 16});</pre>
+<hr>
+
+<div>
+    <h3>Fill parent (div, position:relative)</h3>
+    <textarea id="txt3">
+        SomeText in some form. SomeText in some form. SomeText in some form.
+        SomeText in some form. SomeText in some form. SomeText in some form.
+        SomeText in some form. SomeText in some form. SomeText in some form.
+        SomeText in some form. SomeText in some form. SomeText in some form.
+        SomeText in some form. SomeText in some form. SomeText in some form.
+        SomeText in some form. SomeText in some form. SomeText in some form.
+    </textarea>
+    <button id="b3">Start preloader on parent of textarea</button>
+    <pre>$('#txt3').preloader({fillParent: true});</pre>
+</div>
+<button id="e3">Stop preloader</button>
+<pre>$('#txt3').preloader(false);</pre>
+<hr>
+
+</body>
+<script src="../bower_components/jquery/jquery.js"></script>
+<script src="../PerfiLoader.js"></script>
+<script>
+
+    $('#b1').on('click', function () {
+        $('#txt1').preloader()
+    });
+    $('#e1').on('click', function () {
+        $('#txt1').preloader(false)
+    });
+
+    $('#b2').on('click', function () {
+        $('#txt2').preloader(true, 64)
+    });
+    $('#b2-1').on('click', function () {
+        $('#txt2').preloader({size: 16})
+    });
+    $('#e2').on('click', function () {
+        $('#txt2').preloader(false)
+    });
+
+
+    $('#b3').on('click', function () {
+        $('#txt3').preloader({fillParent: true})
+    });
+    $('#e3').on('click', function () {
+        $('#txt3').preloader(false)
+    });
+
+</script>
+</html>
