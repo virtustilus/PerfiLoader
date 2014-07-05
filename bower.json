@@ -1,6 +1,6 @@
 {
-    "name": "PerfiLoader",
-    "version": "0.1.1",
+    "name": "perfi-loader",
+    "version": "0.1.2",
     "homepage": "https://github.com/virtustilus/PerfiLoader",
     "authors": [
         "Andrey Bezpalenko <virtustilus@gmail.com>"
@@ -12,6 +12,7 @@
     },
     "keywords": [
         "PerfiLoader",
+        "perfi-loader",
         "preloader",
         "spinner"
     ],
