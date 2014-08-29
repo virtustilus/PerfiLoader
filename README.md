@@ -10,7 +10,7 @@ USING
 
 
     "dependencies": {
-        "PerfiLoader": "0.1.1",
+        "perfi-loader": "~0.1.4"
     }
 
 And install it:
