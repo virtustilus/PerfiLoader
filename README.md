@@ -10,12 +10,18 @@ USING
 
 
     "dependencies": {
-        "perfi-loader": "~0.1.4"
+        "perfi-loader": "~0.1.5"
     }
 
 And install it:
     
     bower install
+
+
+Or you could do it in one action:
+
+    bower install perfi-loader --save
+
     
 ##Look into example file, how to use with js and css.
 
